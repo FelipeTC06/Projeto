@@ -1,45 +1,97 @@
 @charset "UTF-8";
 
-body{
-    height: 98vh;
-    background-color: hsl(217, 54%, 11%);
-    display: flex;
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-section{
-    background-color: hsl(216, 50%, 16%);
-    width: 400px;
-    margin: auto;
-    text-align: center;
-    color: hsl(215, 51%, 70%);
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
+body {
+  background-color: #0D1A2D;
 }
-img{
-    width: 330px;
-    border-radius: 8px;
-    margin-top: 35px;
+.container {
+  height: 100vh;
+  display: flex;
 }
-h3{
-    color: white;
-    text-align: left;
-    padding-left: 10px;
+.cartao {
+  margin: auto;
+  width: 360px;
+  min-height: 520px;
+  background-color: #15273F;
+  border-radius: 16px;
 }
-p{
-    text-align: justify;
-    padding-left: 10px;
+.foto {
+  height: 300px;
+  margin: 26px;
+  border-radius: 8px;
+  background-image: url("images/image-equilibrium.jpg");
+  background-size: cover;
 }
-p#ete{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+.texto > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 26px;
 }
-span{
-    color: hsl(178, 100%, 50%);
-    
+.texto > p {
+  color: #6A7F9F;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 26px 0 26px;
 }
-hr{
-    color: hsl(215, 32%, 27%);
+.venda {
+  display: flex;
+  justify-content: space-between;
 }
-
+.eth {
+  display: flex;
+  color: #00fff7;
+  margin: 12px auto 12px 26px;
+  white-space: nowrap;
+}
+.tempo {
+  display: flex;
+  margin: 12px 26px 12px auto;
+  align-items: flex-end;
+  color: #8CA4C7;
+}
+.dis {
+  border-top: 1px rgba(140, 164, 199, 0.2) solid;
+  font-weight: 300;
+  position: relative;
+  color: #8CA4C7;
+  text-align: center;
+  padding: 24px 12px 12px 0;
+  margin: 12px 26px 24px 26px;
+}
+.icon {
+  margin-right: 8px;
+}
+.avatar {
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px white solid;
+  box-shadow: 0 1px 2px rgb(255, 255, 255); 
+}
+.name {
+  color: #F8FDFF;
+}
+.foto:hover  {
+  color: #00fff7;
+}
+.texto > h1:hover {
+  color: rgb(0, 255, 247);
+}
+.name:hover {
+  color: rgb(0, 255, 247);
+}
+.foto:hover {
+  background: url("images/icon-view.svg"),
+      linear-gradient(rgba(0, 255, 247, 0.9),rgba(0, 255, 247, 0.5)), url("images/image-equilibrium.jpg");
+  background-size: 15%, contain, cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
