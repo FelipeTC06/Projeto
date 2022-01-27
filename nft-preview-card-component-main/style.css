@@ -94,4 +94,15 @@ body {
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
+  
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 12px;
+}
+a:hover{
+    color: rgb(0, 255, 247);
 }
